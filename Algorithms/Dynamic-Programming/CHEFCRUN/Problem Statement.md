@@ -1,1 +1,2 @@
-Codechef - https://www.codechef.com/AUG16/problems/CHEFCRUN/
+Codechef - https://www.codechef.com/problems/CHEFCRUN/
+My solution - https://www.codechef.com/viewsolution/11112985
