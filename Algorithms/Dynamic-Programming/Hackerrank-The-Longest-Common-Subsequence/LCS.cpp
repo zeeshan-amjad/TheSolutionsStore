@@ -9,7 +9,7 @@ int main () {
 		cin >> a[i];
 	for (int i = 1; i <= m; ++i)
 		cin >> b[i];
-	for (int i = 0; i <= n; ++i)
+	for (int i = 0; i <= n; ++i)                    //build dp table to find length of LCS
 		for (int j = 0; j <= m; ++j) {
 			if (!i || !j)
 				dp[i][j] = 0;
@@ -20,7 +20,7 @@ int main () {
 		}
 
 	int i = n, j = m, p = 0;
-	while (p < dp[n][m]) {
+	while (p < dp[n][m]) {                         //use dp table to build the LCS
 		if (dp[i][j] == dp[i - 1][j]) {
 			i--;
 			continue;
