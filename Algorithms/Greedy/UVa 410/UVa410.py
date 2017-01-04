@@ -14,7 +14,6 @@ while True:
     
     print ("Set #" + str (n))
         
-    C = []
     for i in range (c):
         l = []
         if m[i]:
@@ -22,7 +21,6 @@ while True:
         if m[2 * c - i - 1]:
             l.append (m[2 * c - i - 1])
         imb += abs (avg - sum (l))
-        #C.append (l)
         print ('{0:2d}'.format (i) + ':', *l)
     print ('IMBALANCE = ' + '{0:0.5f}'.format (imb))
     print ()
